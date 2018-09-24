@@ -1,4 +1,5 @@
 # Create a class named House, a subclass of Property #
+# In feature-A branch #
 from property import Property
 
 class House(Property):
@@ -15,11 +16,11 @@ class House(Property):
     def display(self):
         super().display()
         print('House details')
-        print('number of stories： {}'.format(self.num_stories))
+        print('number of stories: {}'.format(self.num_stories))
         print('garage: {}'.format(self.garage))
         print('fenced yard: {}'.format(self.fenced))
 
-    def prompt_init(self):
+    def prompt_init():
         parent_init = Property.prompt_init()
         
         fenced = ''
